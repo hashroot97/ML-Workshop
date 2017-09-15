@@ -75,6 +75,24 @@ a = summary(train$Age)
 class(a)
 ```
 ```{r}
+x = c(21, 62, 10, 53)
+labels = c("london", "new york", "singapore", "mumbai")
+piepercent = round(100*x/sum(x), 1)
+pie(x, labels=piepercent, main="City Pie Chart", col=rainbow(length(x)))
+```
+```{r}
+print (df)
+
+normalize <- function(x){
+  
+  return ((x - min(x))/ (max(x)- min(x)))
+}
+dfNorm = as.data.frame(lapply(df, normalize))
+```
+```{r}
+
+```
+```{r}
 
 ```
 ```{r}
