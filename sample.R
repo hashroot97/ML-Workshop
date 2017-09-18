@@ -34,4 +34,6 @@ new_df= na.omit(df)
 print(new_df)
 dim(df)
 df
+plot(csin)
+
 
