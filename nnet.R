@@ -5,7 +5,7 @@ str(df)
 class (df)
 dim(df)
 normalize <- function(x){
-  return ((x - min(x))/ (max(x)-min(x))) 
+  return ((x - min(x))/ (max(x)-min(x)))
 }
 concrete_norm = as.data.frame(lapply(df, normalize))
 summary(concrete_norm$strength)
@@ -20,4 +20,4 @@ concrete_model = neuralnet(strength ~ cement + slag + ash + water + superplastic
 plot(concrete_model)
 head(df)
 
-
+print (mtcars)
